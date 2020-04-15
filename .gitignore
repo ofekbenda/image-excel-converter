@@ -1,0 +1,9 @@
+./venv/
+*.png
+./venv/*
+venv/*
+venv/
+venv
+.\venv
+venv\
+.\venv\*
