@@ -217,6 +217,5 @@ def convert(imagePath, outputFolderPath):
     dataframe = pd.DataFrame(arr.reshape(len(row), countcol))
     print(dataframe)
 
-    data = dataframe.style.set_properties(align="left")
     # Converting it in a excel-file
-    data.to_excel(outputFolderPath + "//" + datetime.datetime.now().strftime("%d_%m_%Y-%H_%M") + ".xlsx")
+    dataframe.to_excel(outputFolderPath + "//" + datetime.datetime.now().strftime("%d_%m_%Y-%H_%M") + ".xlsx")
